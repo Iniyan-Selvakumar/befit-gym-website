@@ -162,8 +162,8 @@ a { color: inherit; text-decoration: none; }
 .mobile-nav.active { display: flex; }
 
 .image {
-  background-image: url("./photos/Screenshot 2024-12-08 134448.png");
-  background-size:contain;
+  background-image: url("photos/Screenshot 2024-12-08 134448.png");
+  background-size: contain;
   min-height: 60vh;
   color: #fff;
   width: auto;
@@ -172,19 +172,19 @@ a { color: inherit; text-decoration: none; }
 
 @media(max-width:375px){
   .image {
-    background-size:cover;
+    background-size: cover;
     height: 280px;
   }
 }
 @media(max-width:425px){
   .image {
-    background-size:cover;
+    background-size: cover;
     height: 280px;
   }
 }
 @media(max-width:768px){
   .image {
-    background-size:cover;
+    background-size: cover;
     background-position: -200px;
     height: 500px;
   }
