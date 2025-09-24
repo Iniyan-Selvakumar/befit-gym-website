@@ -51,7 +51,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .navi {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -126,7 +126,7 @@ a { color: inherit; text-decoration: none; }
   .navi .one { display: none; }
 }
 @media (max-width: 375px) {
-  .hamburger { display: block;left: 660px;}
+  .hamburger { display: block;left: 610px;}
   .navi .one { display: none; }
 }
 @media (max-width: 425px) {
