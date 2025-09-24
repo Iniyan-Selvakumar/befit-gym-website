@@ -48,7 +48,6 @@ a { color: inherit; text-decoration: none; }
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
 }
 
 .navi {
@@ -73,7 +72,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .navi img {
-  max-height: 52px;
+  max-height: 35px;
   width: auto;
 }
 
@@ -100,12 +99,13 @@ a { color: inherit; text-decoration: none; }
 .hamburger {
   display: none;
   position: fixed;
-  top: 15px;
-  left: 370px;
+  top: 5px;
+  margin-bottom: -50px;
+  left: 710px;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
-  padding: 8px 10px;
+  padding: 6px 8px;
   cursor: pointer;
   z-index: 2000;
   font-size: 1.5rem;
@@ -126,7 +126,11 @@ a { color: inherit; text-decoration: none; }
   .navi .one { display: none; }
 }
 @media (max-width: 375px) {
-  .hamburger { display: block; }
+  .hamburger { display: block;left: 660px;}
+  .navi .one { display: none; }
+}
+@media (max-width: 425px) {
+  .hamburger { display: block;margin-left: -330px;}
   .navi .one { display: none; }
 }
 
@@ -134,7 +138,7 @@ a { color: inherit; text-decoration: none; }
   display: none;
   flex-direction: column;
   position: fixed;
-  top: 70px;
+  top: 50px;
   left: 0;
   width: 100%;
   background: #fff;
@@ -207,7 +211,7 @@ a { color: inherit; text-decoration: none; }
   font-weight: 900;
   font-family: "Oswald", system-ui, sans-serif;
   font-size: 2.5rem;
-  margin: 0 0 1rem 0;
+  margin: 4rem 0 1rem 0;
   line-height: 1.05;
   color: white;
 }
@@ -330,7 +334,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .diet-text, .contact-info, .contact-form {
-  flex: 1 1 300px;
+  flex: 1 1 100px;
 }
 
 .contact-form {
@@ -366,15 +370,14 @@ a { color: inherit; text-decoration: none; }
 footer, .footer {
   border-top: 1px solid rgba(0,0,0,0.04);
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
   align-items: center;
-  padding: 0.75rem 1rem;
   gap: 1rem;
   flex-wrap: wrap;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
 }
 
-footer i { font-size: 1.4rem; margin-left: .5rem; cursor: pointer; }
+footer i { font-size: 1rem; margin-left: .5rem; cursor: pointer; }
 
 .mobile-hidden { display: block; }
 .center { text-align: center; }
@@ -382,7 +385,7 @@ footer i { font-size: 1.4rem; margin-left: .5rem; cursor: pointer; }
 
 @media (max-width: 325px) {
   html { font-size: 14px; }
-  .hamburger { display: block; }
+  .hamburger { display: block;}
   .navi .one { display: none; }
   .detail { font-size: 1.6rem; padding-top: .8rem; color: #000; }
   .hero-content { padding: 1.5rem 0.6rem; }
@@ -394,7 +397,7 @@ footer i { font-size: 1.4rem; margin-left: .5rem; cursor: pointer; }
   .book-now h2 { font-size: 1.4rem; }
   .book-now p { font-size: 0.9rem; }
   .book-now .btn-primary { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
-  .navi .two { font-size: 0.8rem; }
+  .navi .two { font-size: 0.8rem;}
 }
 
 @media (max-width: 440px) {
@@ -461,7 +464,6 @@ footer i { font-size: 1.4rem; margin-left: .5rem; cursor: pointer; }
   text-align: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  margin-bottom: 70px;
 }
 
 .plan-card h3 {
@@ -551,7 +553,7 @@ footer i { font-size: 1.4rem; margin-left: .5rem; cursor: pointer; }
 }
 
 .page-section {
-  padding: 4rem 0;
+  padding: 2rem 0;
   min-height: 100vh;
   display: block;
 }
@@ -600,4 +602,8 @@ html {
   height: 70vh;
   border: none;
   display: block;
+}
+
+@media(max-width:375px){
+
 }
